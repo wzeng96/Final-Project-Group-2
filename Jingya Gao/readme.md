@@ -1,1 +1,1 @@
-this is a test for readme.
+This is an indivisual file for JYG.
