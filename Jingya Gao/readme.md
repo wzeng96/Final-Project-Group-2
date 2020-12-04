@@ -1,1 +1,1 @@
-This is an indivisual file for JYG.
+This is an individual file for JYG.
