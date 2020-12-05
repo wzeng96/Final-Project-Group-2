@@ -152,13 +152,6 @@ xs_orginal = history.history['lr']
 ys_original = history.history['loss']
 xs = np.array(xs_orginal)
 ys = np.array(ys_original)
-# %% --------------------------------------Prediction  ------------------------------------------------------------------
-
-loss_LR_df = pd.DataFrame(list(zip(xs_orginal, ys_original)),
-                          columns=['LR', 'Loss'])
-print("loss_LR_df:\n", loss_LR_df)
-loss_LR_df.to_csv("loss_LR_df.csv", index=False)
-cat_labels = np.concatenate(all_labels)
-cat_pred = np.concatenate(all_pred)
-print("Final loss value",history.history['loss'][-1])
-print("Final validation loss", history.history['val_loss'][-1])
+# %% -------------------------------------- Print Final Values ----------------------------------------------------------
+print("Final Train Set Loss value",history.history['loss'][-1])
+print("Final Validation Set Loss value", history.history['val_loss'][-1])
