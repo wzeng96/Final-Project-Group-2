@@ -80,5 +80,6 @@ plt.title('loss in every epoch with ImageDataGenerator')
 plt.show()
 # %% -------------------------------------- Print Final Values ----------------------------------------------------------
 
-print("Final loss value",history.history['loss'][-1])
-print("Final validation loss", history.history['val_loss'][-1])
+print("Final Train Set Loss value",history.history['loss'][-1])
+print("Final Validation Set Loss value", history.history['val_loss'][-1])
+
