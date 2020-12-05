@@ -34,7 +34,6 @@ print("y_train.shape:\n", y_train.shape, "\ny_test.shape:\n", y_test.shape)
 
 # %% -------------------------------------- Model Prep ------------------------------------------------------------------
 
-# create CNN model (this is a test model, still need to change)
 model = tf.keras.Sequential([
 
     tf.keras.layers.Conv2D(16, (5, 5), input_shape=(50, 50, 3), activation=tf.keras.activations.relu),
