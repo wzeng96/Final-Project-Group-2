@@ -58,21 +58,21 @@ print("model_eval:\n", model_eval)
 
 plt.imshow(x_test[1])
 plt.title("Actual Count: " + str(y_test[1]) +
-          "\nPredicted Count: " + str(predict_y[1]))
+          "\nPredicted Count: " + str(int(predict_y[1])))
 plt.show()
 
 plt.imshow(x_test[3])
 plt.title("Actual Count: " + str(y_test[3]) +
-          "\nPredicted Count: " + str(predict_y[3]))
+          "\nPredicted Count: " + str(int(predict_y[3])))
 plt.show()
 
 plt.imshow(x_test[36])
 plt.title("Actual Count: " + str(y_test[36]) +
-          "\nPredicted Count: " + str(predict_y[36]))
+          "\nPredicted Count: " + str(int(predict_y[36])))
 plt.show()
 
 plt.imshow(x_test[63])
 plt.title("Actual Count: " + str(y_test[63]) +
-          "\nPredicted Count: " + str(predict_y[63]))
+          "\nPredicted Count: " + str(int(predict_y[63])))
 plt.show()
 
