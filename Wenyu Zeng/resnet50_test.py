@@ -108,5 +108,5 @@ print(test_labels)
 
 plt.imshow(x_test[2])
 plt.title('Actual Count: ' + str(test_labels[2]) +
-          '\nPredicted Count' + str(test_pred[2]))
+          '\nPredicted Count: ' + str(int(test_pred[2])))
 plt.show()
