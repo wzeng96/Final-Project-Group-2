@@ -23,7 +23,7 @@ np.random.seed(SEED)
 tf.random.set_seed(SEED)
 # references https://www.kaggle.com/rmishra258/counting-crowd-with-cnn-social-distancing-project
 # %% -------------------------------------- Load Data ------------------------------------------------------------------
-DATA_DIR = os.getcwd() + "/frames/"
+DATA_DIR = os.getcwd() + "/frames/frames/"
 x, y = [], []
 label = pd.read_csv("labels.csv")
 label['image_name'] = label['id'].map('seq_{:06d}.jpg'.format)
@@ -104,7 +104,6 @@ for layer in model.layers[k:]:
     print(layer.name)
     layer.trainable = True
 
-
 optimizer = Adam(learning_rate=3e-4)
 
 model.compile(
@@ -168,9 +167,8 @@ plt.show()
 mse = mean_squared_error(*df_predictions.T.values)
 pearson_r = scipy.stats.pearsonr(*df_predictions.T.values)[0]
 
-#print(f'MSE on testing: {mse:.1f}\nPearson r between True Values and Predicted Values: {pearson_r:.1f}')
+# print(f'MSE on testing: {mse:.1f}\nPearson r between True Values and Predicted Values: {pearson_r:.1f}')
 print("MSE Train Set Loss value", history.history['loss'][-1])
 print("MSE Validation Set Loss value", history.history['val_loss'][-1])
-print("MAE Train Set Loss value",history.history['mean_absolute_error'][-1])
-print("MAE Validation Set Loss value",history.history['val_mean_absolute_error'][-1])
-
+print("MAE Train Set Loss value", history.history['mean_absolute_error'][-1])
+print("MAE Validation Set Loss value", history.history['val_mean_absolute_error'][-1])
