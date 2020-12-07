@@ -171,6 +171,6 @@ pearson_r = scipy.stats.pearsonr(*df_predictions.T.values)[0]
 #print(f'MSE on testing: {mse:.1f}\nPearson r between True Values and Predicted Values: {pearson_r:.1f}')
 print("MSE Train Set Loss value", history.history['loss'][-1])
 print("MSE Validation Set Loss value", history.history['val_loss'][-1])
-print("MAE Test Set Loss value",history.history['mean_absolute_error'][-1])
+print("MAE Train Set Loss value",history.history['mean_absolute_error'][-1])
 print("MAE Validation Set Loss value",history.history['val_mean_absolute_error'][-1])
 
