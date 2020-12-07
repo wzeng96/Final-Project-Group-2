@@ -3,9 +3,9 @@
 
 This project is a Crowd Counting project using a custom built CNN model and a fine tuned ResNet50 model.
 
-The group-proposal is in the "Group Proposal" Folder.
+The group-proposal is in the "Group-Proposal" Folder.
 
-The Final-Group-Project-Reporte is in the "Final GroupProject Report" folder.
+The Final-Group-Project-Reporte is in the "Final Group Project Report" folder.
 
 The Final-Group-Presentation is in the "Final Group Presentation" folder.
 
