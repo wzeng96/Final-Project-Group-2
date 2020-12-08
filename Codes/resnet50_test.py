@@ -120,6 +120,7 @@ plt.show()
 plt.imshow(x_test[2])
 plt.title('Actual Count: ' + str(test_labels[2]) +
           '\nPredicted Count: ' + str(int(test_pred[2])))
+plt.show()
 
 test_pred_int = list(map(int, test_pred))
 test_labelss = list(test_labels)
