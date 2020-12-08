@@ -119,7 +119,7 @@ print(test_pred_int)
 error = [test_labelss[i] - test_pred_int[i] for i in range(len(test_labelss))]
 print(np.mean(error))
 plt.hist(error)
-plt.title('Histogram of Residuals in Validation Set')
+plt.title('ResNet50 Histogram of Residuals in Validation Set')
 plt.show()
 
 correct = []
