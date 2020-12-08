@@ -110,3 +110,22 @@ plt.imshow(x_test[2])
 plt.title('Actual Count: ' + str(test_labels[2]) +
           '\nPredicted Count: ' + str(int(test_pred[2])))
 plt.show()
+
+test_pred_int = list(map(int, test_pred))
+test_labelss = list(test_labels)
+print(test_labelss)
+print(test_pred_int)
+
+error = [test_labelss[i] - test_pred_int[i] for i in range(len(test_labelss))]
+print(np.mean(error))
+plt.hist(error)
+plt.title('Histogram of Residuals in Validation Set')
+plt.show()
+
+correct = []
+for w in error:
+    if w == 0:
+        correct.append(w)
+
+print('The model correctly predict {} images'.format(len(correct)))
+
