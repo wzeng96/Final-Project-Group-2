@@ -77,8 +77,8 @@ plt.show()
 
 pred = [int(i) for i in predict_y]
 error = [y_test[i] - pred[i] for i in range(len(y_test))]
-plt.hist(error, rwidth=2)
-plt.title('Histogram of Residuals in Validation Set')
+plt.hist(error)
+plt.title('CNN Histogram of Residuals in Validation Set')
 plt.show()
 
 correct = []
